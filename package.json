@@ -1,0 +1,23 @@
+{
+    "author": "Pranav Parikh",
+    "name": "MyTestProject",
+    "description": "Dummy project for testing peer dependency",
+    "version": "0.0.1",
+    "homepage": "http://github.com/pranavparikh/myTestProject.git",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:pranavparikh/myTestProject.git"
+    },
+    "scripts": {
+        "test": "arrow 'smoke/*-descriptor.json' --browser=firefox --report=true --logLevel=debug --color=false --seleniumHost=http://localhost:4444/wd/hub"
+    },
+
+    "engines": ["node >=0.6"],
+
+    "dependencies": {
+        "yahoo-arrow": "git://github.com/pranavparikh/arrow.git#yuiPeerDep",
+        "yui":"3.14.0"
+    }
+
+}
+
